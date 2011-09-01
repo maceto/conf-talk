@@ -45,6 +45,12 @@
 
 # *Dinámico*
 <br>
+@@@ ruby
+    value = 42
+    puts value # => 42
+    value = "Hello, UTN!"
+    puts value # => Hello, UTN!
+@@@
 ###(Las variables son objetos y al definirse no se especifica el tipo)
 
 !SLIDE
@@ -95,6 +101,12 @@
       puts "<3"
     end
 
+    puts "Hello, UTN!" if Time.now.friday?
+
+    (1..5).each do |i|
+      puts "El cuadrado de #{i} es #{i * i}"
+    end
+
 @@@
 
 !SLIDE
@@ -127,7 +139,7 @@
 @@@
 <br>
 <br>
-##### donde *user* es una variable que fue creada fuera del bloque y el bloque la encapsula
+##### donde *user* es una variable que fue creada fuera del bloque y el bloque puede acceder a ella
 
 !SLIDE
 
@@ -137,6 +149,9 @@
 
     reverse_string_order = -> x, y { y.to_s <=> x.to_s }
     [1, 20, 3].sort &reverse_string_order
+
+    square = -> n { n * n }
+    [1, 2, 3, 4, 5].map &square
 
 @@@
 
