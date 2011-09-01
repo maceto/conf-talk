@@ -1,6 +1,6 @@
 !SLIDE
 
-# Quiénes somos ?
+# ¿Quiénes somos?
 
 !SLIDE
 
@@ -27,11 +27,11 @@
 
 !SLIDE
 
-## Multiples implementaciones
+## Múltiples implementaciones
 <br>
 ### MRI: C
 <br>
-### Jruby: Java
+### JRuby: Java
 <br>
 ### IronRuby: .NET
 <br>
@@ -53,7 +53,7 @@
 
 !SLIDE
 
-### en Ruby todo es un objeto
+### En Ruby todo es un objeto
 <br>
 @@@ ruby
 
@@ -148,7 +148,7 @@
 
 !SLIDE
 
-# Ruby on Rails 
+# Ruby on Rails
 #### ([http://rubyonrails.org/](http://rubyonrails.org/))
 <br>
 ## *MVC*
@@ -160,7 +160,7 @@
 
 !SLIDE
 
-#Sinatra 
+#Sinatra
 #### ([https://github.com/sinatra/sinatra](https://github.com/sinatra/sinatra))
 <br>
 ## *Simplicidad*
@@ -186,7 +186,7 @@
 
 # RubyGems: Distribución de paquetes
 <br>
-####(las cosas que no te da ruby las podes obtener con rubygems)
+####(las cosas que no te da Ruby las podes obtener con RubyGems)
 
 !SLIDE
 
@@ -276,13 +276,13 @@ Ciudad Cultural Konex
 ## http://rubyconfargentina.com
 ### @rubyconfar
 <br>
-### Martin Aceto (@maceto) 
+### Martin Aceto (@maceto)
 <br>
-### Ernesto Tagwerker (@_nesto) 
+### Ernesto Tagwerker (@_nesto)
 <br>
-### Leandro Lopez (@inkel) 
+### Leandro Lopez (@inkel)
 <br>
-### Matias Owsianik (@matiasow) 
+### Matias Owsianik (@matiasow)
 <br>
-### Sebastian Rabuini (@sebasr) 
+### Sebastian Rabuini (@sebasr)
 
