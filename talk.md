@@ -176,22 +176,28 @@
 !SLIDE
 
 #Sinatra
-#### ([https://github.com/sinatra/sinatra](https://github.com/sinatra/sinatra))
+#### ([http://www.sinatrarb.com/](http://www.sinatrarb.com/))
 <br>
-## *Simplicidad*
+## *Minimalista y Simple*
 <br>
+@@@ ruby
+    require 'sinatra'
+    
+    get '/hi' do
+      "Hello World!"
+    end
+@@@
 <br>
-##### (Ejemplo)
 
 !SLIDE
 
-# Otros FrameWorks
+# Otros Frameworks
 <br>
-## CUBA
+## Cuba
 <br>
 ## Padrino
 <br>
-### otros mas..
+### Otros más... (Sobre Rack)
 
 !SLIDE
 
@@ -199,25 +205,77 @@
 
 !SLIDE
 
-# RubyGems: Distribución de paquetes
+# Rake: Ruby Make
 <br>
-####(las cosas que no te da Ruby las podes obtener con RubyGems)
+## #Rakefile
+@@@ ruby
+    task :default => [:test]
+
+    task :test do
+      ruby "test/unittest.rb"
+    end
+@@@ 
+<br>
+## #Bash
+@@@ bash
+    rake test
+@@@
+<br>
 
 !SLIDE
 
-# Bibliotecas.
+# RubyGems: Distribución de paquetes
 <br>
-### God
+##(Las cosas que no te dá Ruby las podés obtener con RubyGems)
+
+!SLIDE
+
+# RubyGems: Ejemplo @Twitter
+<br>
+## #bash
+@@@ bash
+    gem install 'twitter'
+    irb
+@@@
+<br>
+## #irb
+@@@ ruby
+    > require 'twitter'
+    => true
+    > Twitter.user_timeline("_nesto").first.text
+    => "cerrando detalles de la charla de #Ruby para la UTN"
+    
+!SLIDE
+
+# Git
+<br>
+## SCM (Como SVN, CVS pero mejor!)
+<br>
+### Proyectos en Git: Linux, Debian, Eclipse
+
+!SLIDE
+
+# GitHub
+<br>
+## Social Coding (Open Source Fun!)
+<br>
+### Proyectos en GitHub: jQuery, Symfony, DJAngo
+
+!SLIDE
+
+# Gems Más Usados
+<br>
+### Sass
 <br>
 ### Capistrano
 <br>
-### Vagrant
+### Haml
 <br>
 ### Capybara
 <br>
 ### Cucumber
 <br>
-### RSpec
+### Rails
 
 !SLIDE
 
@@ -243,9 +301,9 @@
 
 # Eventos en Argentina
 <br>
-## Meet ups (Todos los meses)
+## Meetups (Mensuales)
 <br>
-## RubyConf Argentina 2011
+## RubyConf Argentina 2011 (Noviembre)
 
 !SLIDE
 
