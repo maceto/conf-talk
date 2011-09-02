@@ -5,7 +5,7 @@
 !SLIDE
 
 ## Ruby Argentina
-## Asociación Civil sin fines de lucro
+## Asociación Civil
 
 !SLIDE
 
@@ -51,7 +51,9 @@
     value = "Hello, UTN!"
     puts value # => Hello, UTN!
 @@@
-###(Las variables son objetos y al definirse no se especifica el tipo)
+<br>
+<br>
+#####(Las variables son objetos y al definirse no se especifica el tipo)
 
 !SLIDE
 
