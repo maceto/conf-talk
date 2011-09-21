@@ -1,0 +1,6 @@
+# default.gems generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
+bluecloth -v2.1.0
+makers-mark -v0.1.1
+nokogiri -v1.5.0
+open4 -v1.1.0
+slidedown -v0.2.0
