@@ -180,7 +180,7 @@
 #Sinatra
 #### ([http://www.sinatrarb.com/](http://www.sinatrarb.com/))
 <br>
-## *Minimalista y Simple*
+## *Minimalista. Simple.*
 <br>
 @@@ ruby
     require 'sinatra'
@@ -190,6 +190,10 @@
     end
 @@@
 <br>
+
+!SLIDE
+
+# Ejemplo de Padrino.rb
 
 !SLIDE
 
@@ -204,6 +208,22 @@
 !SLIDE
 
 # Ruby Ecosystem
+
+!SLIDE
+
+# Windows Friendly
+
+## Ruby Installer
+
+## Rails Installer
+
+!SLIDE
+
+# Ruby Version Management
+
+## rvm (Mac/Linux)
+
+## pik (Windows)
 
 !SLIDE
 
