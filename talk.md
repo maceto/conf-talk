@@ -72,11 +72,11 @@
 
 !SLIDE
 
-# todo es *Abierto*
+# Todo es *Abierto*
 
 !SLIDE
 
-(Donde no sólo el código fuente es abierto: [https://github.com/ruby/ruby](https://github.com/ruby/ruby))
+(No sólo el código fuente es abierto: [https://github.com/ruby/ruby](https://github.com/ruby/ruby))
 <br>
 @@@ ruby
 
@@ -93,7 +93,7 @@
 
 !SLIDE
 
-# es muy *Expresivo*
+# Es muy *Expresivo*
 
 !SLIDE code
 
@@ -117,7 +117,7 @@
 
 !SLIDE
 
-## *interacciones con bases de datos ágil*
+## *Interacciones ágiles con bases de datos*
 
 !SLIDE
 
@@ -138,10 +138,10 @@
       puts user
     end
 
+    # Donde *user* es una variable que fue creada 
+    # fuera del bloque y el bloque puede acceder a ella
 @@@
 <br>
-<br>
-##### donde *user* es una variable que fue creada fuera del bloque y el bloque puede acceder a ella
 
 !SLIDE
 
@@ -161,7 +161,7 @@
 
 # Web Frameworks
 <br>
-### objetivo principal es la productividad
+### Objetivo principal: Más productividad
 
 !SLIDE
 
@@ -180,7 +180,7 @@
 #Sinatra
 #### ([http://www.sinatrarb.com/](http://www.sinatrarb.com/))
 <br>
-## *Minimalista y Simple*
+## *Minimalista. Simple.*
 <br>
 @@@ ruby
     require 'sinatra'
@@ -190,6 +190,10 @@
     end
 @@@
 <br>
+
+!SLIDE
+
+# Ejemplo de Padrino.rb
 
 !SLIDE
 
@@ -204,6 +208,22 @@
 !SLIDE
 
 # Ruby Ecosystem
+
+!SLIDE
+
+# Windows Friendly
+
+## Ruby Installer
+
+## Rails Installer
+
+!SLIDE
+
+# Ruby Version Management
+
+## rvm (Mac/Linux)
+
+## pik (Windows)
 
 !SLIDE
 
