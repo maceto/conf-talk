@@ -48,8 +48,8 @@
 @@@ ruby
     value = 42
     puts value # => 42
-    value = "Hello, UTN!"
-    puts value # => Hello, UTN!
+    value = "Hello, UP!"
+    puts value # => Hello, UP!
 @@@
 <br>
 <br>
@@ -86,8 +86,8 @@
       end
     end
 
-    >> "UTN".greet
-    => "Hola UTN!"
+    >> "UP".greet
+    => "Hola UP!"
 
 @@@
 
@@ -103,7 +103,7 @@
       puts "<3"
     end
 
-    puts "Hello, UTN!" if Time.now.friday?
+    puts "Hello, UP!" if Time.now.friday?
 
     (1..5).each do |i|
       puts "El cuadrado de #{i} es #{i * i}"
@@ -123,7 +123,7 @@
 
 @@@ ruby
 
-    University.find_by_name("UTN")
+    University.find_by_name("UP")
 
 @@@
 
@@ -170,7 +170,15 @@
 <br>
 ## *MVC*
 <br>
-## *Generadores*
+#### "Convention Over Configuration"
+<br>
+#### "Don’t Repeat Yourself" (DRY)
+<br>
+#### ORM -> ActiveRecord
+<br/>
+#### Database Migrations
+<br/>
+#### *Generadores*
 <br>
 <br>
 ##### (Ejemplo)
@@ -265,7 +273,7 @@
     > require 'twitter'
     => true
     > Twitter.user_timeline("_nesto").first.text
-    => "cerrando detalles de la charla de #Ruby para la UTN"
+    => "cerrando detalles de la charla de #Ruby para la UP"
     
 !SLIDE
 
@@ -371,6 +379,10 @@ Ciudad Cultural Konex
 ## http://rubyconfargentina.com
 ### @rubyconfar
 <br>
+<table>
+<tr>
+<td>
+<br>
 ### Martin Aceto (@maceto)
 <br>
 ### Ernesto Tagwerker (@_nesto)
@@ -380,4 +392,21 @@ Ciudad Cultural Konex
 ### Matias Owsianik (@matiasow)
 <br>
 ### Sebastian Rabuini (@sebasr)
-
+<td/>
+<td>
+&nbsp;&nbsp;&nbsp;
+<td/>
+<td>
+<br>
+### Michel Martens (@soveran)
+<br>
+### Lucas Florio (@lucasefe)
+<br>
+### Chad DePue
+<br>
+### Tom Henrik Aadland (@tomhenrik)
+<br>
+### Nicolás Cerrini (@ceneon)
+<td/>
+<tr/>
+<table/>
