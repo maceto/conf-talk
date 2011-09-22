@@ -9,11 +9,26 @@
 
 !SLIDE
 
-## Hoy vamos a contarles acerca de :
+## Hoy vamos a contarles acerca de:
 
 !SLIDE
 
 # ルビ   (Ruby)
+
+!SLIDE
+
+##Agenda
+<br/>
+* Características de Ruby<br/>
+* Instalar Ruby<br/>
+* Web Frameworks<br/>
+* Ruby Ecosystem<br/>
+* Recursos<br/>
+* Eventos locales<br/>
+
+!SLIDE
+
+##Características de Ruby
 
 !SLIDE
 
@@ -48,8 +63,8 @@
 @@@ ruby
     value = 42
     puts value # => 42
-    value = "Hello, UTN!"
-    puts value # => Hello, UTN!
+    value = "Hello, UP!"
+    puts value # => Hello, UP!
 @@@
 <br>
 <br>
@@ -72,11 +87,11 @@
 
 !SLIDE
 
-# todo es *Abierto*
+# Todo es *Abierto*
 
 !SLIDE
 
-(Donde no sólo el código fuente es abierto: [https://github.com/ruby/ruby](https://github.com/ruby/ruby))
+(No sólo el código fuente es abierto: [https://github.com/ruby/ruby](https://github.com/ruby/ruby))
 <br>
 @@@ ruby
 
@@ -86,14 +101,14 @@
       end
     end
 
-    >> "UTN".greet
-    => "Hola UTN!"
+    >> "UP".greet
+    => "Hola UP!"
 
 @@@
 
 !SLIDE
 
-# es muy *Expresivo*
+# Es muy *Expresivo*
 
 !SLIDE code
 
@@ -103,7 +118,7 @@
       puts "<3"
     end
 
-    puts "Hello, UTN!" if Time.now.friday?
+    puts "Hello, UP!" if Time.now.friday?
 
     (1..5).each do |i|
       puts "El cuadrado de #{i} es #{i * i}"
@@ -113,17 +128,19 @@
 
 !SLIDE
 
-# Programmer Happiness Oriented
+# "Ruby is designed for programmer happiness"
+<br>
+matz
 
 !SLIDE
 
-## *interacciones con bases de datos ágil*
+## *Interacciones ágiles con bases de datos*
 
 !SLIDE
 
 @@@ ruby
 
-    University.find_by_name("UTN")
+    University.find_by_name("UP")
 
 @@@
 
@@ -138,10 +155,10 @@
       puts user
     end
 
+    # Donde *user* es una variable que fue creada 
+    # fuera del bloque y el bloque puede acceder a ella
 @@@
 <br>
-<br>
-##### donde *user* es una variable que fue creada fuera del bloque y el bloque puede acceder a ella
 
 !SLIDE
 
@@ -159,19 +176,70 @@
 
 !SLIDE
 
+## Instalar Ruby
+
+!SLIDE
+
+## Ruby.install!
+
+<ul><li>Mac OS: Ya viene instalado<li></ul>
+<ul><li>Linux: Ya instalado, o "apt-get install ruby ..." <li></ul>
+<ul><li>Windows: rubyinstaller.org</li></ul>
+
+!SLIDE
+
+## Ruby.installed?
+
+
+conf$ ruby -v<br/>
+=> ruby 1.9..... <br>
+
+<br/><br/>
+
+## Interactive Ruby
+conf$ irb<br/>
+
+@@@ ruby
+
+	"hola mundo".split
+	=> ["hola", "mundo"] 
+
+@@@ 
+
+!SLIDE
+
+## Probar Ruby online
+
+http://tryruby.org
+
+!SLIDE
+
 # Web Frameworks
 <br>
-### objetivo principal es la productividad
+### Objetivo principal: Más productividad
 
 !SLIDE
 
 # Ruby on Rails
 #### ([http://rubyonrails.org/](http://rubyonrails.org/))
-<br>
+
+!SLIDE
+
 ## *MVC*
 <br>
+## "Convention Over Configuration"
+<br>
+## "Don’t Repeat Yourself" (DRY)
+<br>
+## ORM -> ActiveRecord
+<br/>
+## Database Migrations
+<br/>
 ## *Generadores*
 <br>
+
+!SLIDE
+
 <br>
 ##### (Ejemplo)
 
@@ -180,7 +248,7 @@
 #Sinatra
 #### ([http://www.sinatrarb.com/](http://www.sinatrarb.com/))
 <br>
-## *Minimalista y Simple*
+## *Minimalista. Simple.*
 <br>
 @@@ ruby
     require 'sinatra'
@@ -190,6 +258,10 @@
     end
 @@@
 <br>
+
+!SLIDE
+
+# Ejemplo de Padrino.rb
 
 !SLIDE
 
@@ -207,6 +279,22 @@
 
 !SLIDE
 
+# Windows Friendly
+
+## Ruby Installer
+
+## Rails Installer
+
+!SLIDE
+
+# Ruby Version Management
+
+## rvm (Mac/Linux)
+
+## pik (Windows)
+
+!SLIDE
+
 # Rake: Ruby Make
 <br>
 ## #Rakefile
@@ -220,7 +308,9 @@
 <br>
 ## #Bash
 @@@ bash
+
     rake test
+
 @@@
 <br>
 
@@ -228,7 +318,7 @@
 
 # RubyGems: Distribución de paquetes
 <br>
-##(Las cosas que no te dá Ruby las podés obtener con RubyGems)
+##(Las cosas que no te da Ruby las podés obtener con RubyGems)
 
 !SLIDE
 
@@ -242,10 +332,11 @@
 <br>
 ## #irb
 @@@ ruby
+
     > require 'twitter'
     => true
     > Twitter.user_timeline("_nesto").first.text
-    => "cerrando detalles de la charla de #Ruby para la UTN"
+    => "cerrando detalles de la charla de #Ruby para la UP"
     
 !SLIDE
 
@@ -261,7 +352,7 @@
 <br>
 ## Social Coding (Open Source Fun!)
 <br>
-### Proyectos en GitHub: jQuery, Symfony, DJAngo
+### Proyectos en GitHub: jQuery, Symfony, DJAngo, Linux Kernel
 
 !SLIDE
 
@@ -293,71 +384,82 @@
 
 # Recursos
 <br>
-### ruby-lang.org
+### ruby-lang.org/es/ -> "Ruby en 20 minutos"
 <br>
 ### Lista rubysur@googlegroups.com
 <br>
 ### ruby.com.ar - @rubyargentina
+<br/>
+### Rails for Zombies -> http://railsforzombies.org
 
 !SLIDE
 
-# Eventos en Argentina
-<br>
+# Eventos locales
+
+!SLIDE
+
 ## Meetups (Mensuales)
 <br>
-## RubyConf Argentina 2011 (Noviembre)
+Se anuncian en www.ruby.com.ar
 
 !SLIDE
+
+## RubyConf Argentina 2011 
+
+# 8 y 9 de Noviembre
+Ciudad Cultural Konex
+<br/>
+<br/>
+Parte del <i>"Tour Ruby Sur"</i>
+
+!SLIDE
+
+## Speakers
+<br/><br/>
 
 ## Shugo Maeda
-Uno de los responsables de que Ruby exista.
-
-!SLIDE
-
 ## Aaron Patterson
-Integrante del core de Ruby y de Rails.
-
-!SLIDE
-
 ## Konstantin Haase
-Responsable del web framework Sinatra.
-
-!SLIDE
-
 ## Scott Chacon
-Git core contributor y CIO de GitHub
-
-!SLIDE
-
 ## Tom Preston-Werner
-CTO de GitHub
-
-!SLIDE
-
 ## Luis Lavena
-Integrante del core de Ruby
-
-!SLIDE
-
+<br/>
 ### Y muchos más.
 
 !SLIDE
 
-# 8 y 9 de Noviembre
-Ciudad Cultural Konex
+## http://rubyconfargentina.org
+### @rubyconfar
+<br>
 
 !SLIDE
 
-## http://rubyconfargentina.com
+Martin Aceto (@maceto)<br/>
+Ernesto Tagwerker (@_nesto)<br/>
+Leandro Lopez (@inkel)<br/>
+Matias Owsianik (@matiasow)<br/>
+Sebastian Rabuini (@sebasr)<br/>
+Michel Martens (@soveran)<br/>
+Lucas Florio (@lucasefe)<br/>
+Chad DePue<br/>
+Tom Henrik Aadland (@tomhenrik)<br/>
+Nicolás Cerrini (@ceneon)<br/>
+
+!SLIDE
+
+## ¿Preguntas?
+
+
+!SLIDE
+
+## Gracias por venir
+
+<br/><br/>
+
+## http://ruby.com.ar
+## http://rubyconfargentina.org
 ### @rubyconfar
-<br>
-### Martin Aceto (@maceto)
-<br>
-### Ernesto Tagwerker (@_nesto)
-<br>
-### Leandro Lopez (@inkel)
-<br>
-### Matias Owsianik (@matiasow)
-<br>
-### Sebastian Rabuini (@sebasr)
+
+
+
 
